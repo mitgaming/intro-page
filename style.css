@@ -2,7 +2,7 @@ html {
     height: 100%;
 }
 body {
-	background: #bcdee7 url("./img/bg.jpg") no-repeat center center fixed;
+	background: #bcdee7 url("https://picsum.photos/1920/1080") no-repeat center center fixed;
     background-size: 120% auto;
     position: fixed;
 	padding: 0px;
@@ -13,6 +13,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 body:before {
+	background-color: #000000bd;
     content: "";
     height: 0px;
     padding: 0px;
