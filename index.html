@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - Remix Challenge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var url = new URL(window.location.href);
+            document.title = url.searchParams.get("title") ? url.searchParams.get("title") : "Mít's Intro Page";
+            document.getElementById("name").innerHTML = url.searchParams.get("name") ? url.searchParams.get("name") : "Lươn Thanh Mít";
+            document.getElementById("sub-name").innerHTML = url.searchParams.get("sub-name") ? url.searchParams.get("sub-name") : "Intro Page";
+        });
+    </script>
+</head>
+
+<body>
+    <aside class="profile-card">
+        <header>
+            <a href="/">
+                <img src="https://picsum.photos/200" />
+            </a>
+            <h1 id="name">David Jones</h1>
+            <h2 id="sub-name">Web Developer</h2>
+        </header>
+        <div class="profile-bio">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, fuga at. Consequatur tempore, deleniti excepturi magnam debitis laudantium odit eum, iusto in illum optio autem tenetur at repellendus! Perspiciatis, reprehenderit.</p>
+        </div>
+    </aside>
+</body>
+
+</html>
